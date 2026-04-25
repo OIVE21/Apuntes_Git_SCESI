@@ -43,11 +43,33 @@ Lista de prefijos -> feat, fix, perf, build, ci, docs, refactor, style, test
 Estructura de los commits -> prefijo (Titulo del commit) luego el cuerpo que lo describe
 Es fundamental hacer buenos commits para que al momento de compartir nuestro trabajo, nos entiendan al momento de presentar y trabajar en equipo 
 
-Dsa
-d
-
-
-
-
-
+# Clase 3 
+###Introducción a GitHub
+Hablemos de GitHub, pues es una plataforma en la nube con el ícono de un gato con fondo negro. También es una red social. Sus funciones son principalmente alojar, gestionar y colaborar
+en proyectos utilazando git. 
+###Git vs GitHub
+Git -> Sistema de control integrado 
+GitHub -> Servidor que almacena los guardados que genera Git, entonces usa Git pero no es Git. 
+###SSH
+En SSH configuramos en nuestra pc, para comunicarnos con github, debemos de usar una key para que GitHub no moleste pidiendo la autentificación una y otra vez.
+###HTTPS
+Cuando usemos o clonemos algún repositorio, HHTTPS nos pide la autentificación siempre que lo intentemos, además que nos pide un token. 
+##Crear Repositorios en GitHub
+1.- Ir al apartado de repositorios de la cuenta y poner New.
+2.- Ponerle nombre al nuevo repositorio, la descripción es opcional 
+3.- Click en Create Repository 
+##Conectar Repositorio de Git con uno de GitHub 
+Comando --> git remote add origin git@github.com: TuUser/TuRepo.git
+git branch -M main 
+git push -u origin main 
+##Clonar Repositorio de Git
+Comando-->  git clone "git@github.com: TuUser/TuRepo.git"
+Para ver a que repositorio remoto está conectado--> git remote -v
+##Comandos para los cambios 
+###Subir cambios 
+git push origin <rama>
+Donde "git push" empuja los commits y "origin" es el servidor al que lo apodamos así, rama es la del código
+###Bajar cambios
+git pull origin <rama>
+Donde "git pull" trae los commits, "origin" es el servidor al que lo apodamos así y "rama" es la del código
 
