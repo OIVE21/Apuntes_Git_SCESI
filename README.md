@@ -43,8 +43,8 @@ Lista de prefijos -> feat, fix, perf, build, ci, docs, refactor, style, test
 Estructura de los commits -> prefijo (Titulo del commit) luego el cuerpo que lo describe
 Es fundamental hacer buenos commits para que al momento de compartir nuestro trabajo, nos entiendan al momento de presentar y trabajar en equipo 
 
-
-
+Dsa
+d
 
 
 
