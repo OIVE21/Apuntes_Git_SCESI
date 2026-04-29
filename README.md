@@ -135,4 +135,18 @@ Son ramas que se usan normalmente cuando preparas el lanzamiento de una nueva ve
 ### Hotfix 
 Ramas que funcionan como áreas de mantenimiento. Se usan para trabajar en parches, corregir bugs, etc. Se crean en main y se fusionan con main o develop.
 
+# Clase 6
 
+## Git merge 
+Merge en su traducción al inglés, significa fusion y permite fucionar ramas empezando a escribir sin afectar la rama principal
+git checkout develop --> se dirige a la rama develop
+## Git fech 
+Este comando mira las ramas de develop y todas las rams que tienen cambios.
+## Git pull origin develop
+Trae todas las rams de develop a el repo local
+### Algunos comandos
+- git swich --> te mueves a la rama y luego la traes
+- git fech --> para checkear si subieron cambios)
+- git push origin develop --> subir cambios
+- git pull origin develop --> traer todos los cambios para mi)
+- git checkout -b feature/name (ejemplo: feature/'update readme') --> Las ramas se crean en feature
