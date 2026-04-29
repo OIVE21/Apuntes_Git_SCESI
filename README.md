@@ -73,3 +73,37 @@ Donde "git push" empuja los commits y "origin" es el servidor al que lo apodamos
 git pull origin <rama>
 Donde "git pull" trae los commits, "origin" es el servidor al que lo apodamos así y "rama" es la del código
 
+#Clase 4 
+##GIT REMOTE 
+Se trata de un comando de Git que facilita gestionar las conexiones con los repositorios remotos. 
+Nos sirve bastante porque le dice a Git Local donde enviar o traer información.
+###Comandos Utiles de Git Remote 
+git remote -v --> Ver las URLs de donde está el repositorio 
+git remote add <apodo> "ur" --> Vinculación de nuestro repositorio local con uno de la nube
+git remote set-url <apodo> "url" --> Cambia la url de nuestro repositorio 
+##Múltiples SSH
+En el caso de que tengamos más de una cuenta o queramos tener otras cuentas de GitHub debemos tener más de una llave SSH por buena práctica.
+Cada cuenta necesita su tunel para que estos no choquen
+###Configurar SSH
+1.- Generamos el sshkey con otro nombre
+2.- Creamos un archivo config para no chocar las Keys
+3.- Verificación con el comando "ssh -T git @github-miname"
+##Configuraciones Locales 
+Estas se imponen a las globales, mientras que las globales solo funcionan para el repositorio en el que se aplican.
+Tip: Reemplazar las flag --global 
+Tip 2: Hacer Git Clone con el Host Correcto
+##Git Checkout
+Desplaza el HEAD hacia un punto específico de una rama distinta
+Este comando es bien útil porque inspecciona, restaura, experimenta y cambia
+##Detached HEAD
+Eres un espectador en el pasado, es decir puedes ver todo y escribir notas pero no tienes ramas. Asimismo, si te vas al presente sin encarna en una rama, tus cambios se pierden
+##Ir y volver de un Commit
+atrás --> git checkout <hash antiguo>
+ir al último hash --> git checkout <rama>
+Tus commits desaparecen a menos que hagas lo siguiente: 
+git ckeckout <hash del commit creado>
+git checkout -b rama_nueva
+##Tips para buenas prácticas del Checkout
+1.- No trabajar mucho timepo en Detached HEAD --> En vez de dos lineas, crear directamente una rama
+2.- Limpiar directorio de Trabajo --> Antes de ir al pasado, hay que hacer un commit del presente. Caso contrario, git no nos dejará viajar al pasado 
+3.- Usarlo para aprender --> Es la mejor forma de entender cómo se crearon los commits de proeyctos grandes.
