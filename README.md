@@ -150,3 +150,25 @@ Trae todas las rams de develop a el repo local
 - git push origin develop --> subir cambios
 - git pull origin develop --> traer todos los cambios para mi)
 - git checkout -b feature/name (ejemplo: feature/'update readme') --> Las ramas se crean en feature
+
+# Clase 7
+
+## Pull Request
+Básicamente es una manera de trabajar que crea un request en el grupo de repositorio para ir viendo a que se le quiere hacer mergear
+
+## Creación de Pull Request 
+Primero que nada se debe hacer previamente el comando -- git push origin rama -- 
+El proceso implica crear una rama, realizar cambios, subirla al repositorio y solicitar la revisión para asegurar la calidad antes del merge
+
+## Por qué se usan los Pull Request 
+Principalmente para temas de seguridad, no es prudente que cualquiera pueda tocar el repositorio y manipularlo o mergearlo.
+Es una forma estratégica para poder trabajar en equipo.
+
+## Cómo proteger el repositorio y limitar la colaboración 
+Las estrategias clave incluyen proteger ramas, gestionar permisos de colaboradores y limitar interacciones temporales.
+- pull request before merging: Exige que los cambios pasen por una revisión antes de fusionarse.
+
+## Cómo colaboro el proyecto si no soy un colaborador invitado
+Si no soy un colaborador invitado en un repositorio de GitHub, aún se puede contribuir utilizando «Fork and Pull Request». 
+Este método permite copiar el proyecto, realizar cambios y proponer que sean incluidos en el proyecto original.
+
